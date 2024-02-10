@@ -9,14 +9,15 @@
              background-color: black; /* Set background color to black */
             margin: 0; /* Remove default margin */
             padding: 0; /* Remove default padding */
-            display: flex;
-            justify-content: center; /* Center content horizontally */
-            align-items: center; /* Center content vertically */
+            position: relative; /* Set the body as a reference for absolute positioning */
             height: 100vh; /* Set height to 100% of viewport height */
         }
         .content {
+            position: absolute; /* Position the content absolutely */
+            top: 25vh; /* Place the content 25% down from the top of the viewport */
+            left: 50%; /* Move content to the center horizontally */
+            transform: translateX(-50%); /* Adjust to center the content horizontally */
             text-align: center; /* Center content horizontally */
-            margin-top: 25vh; /* Move content 25% down from the top of the viewport */
         }
         img {
             max-width: 100%; /* Ensure image does not exceed container width */
